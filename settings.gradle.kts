@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyApp01LinearLayout"
-include(":app")
- 
+rootProject.name = "github-fe-pma-2024"
+include(":myapp01linearlayout")
+include(":myapp002myownlinearlayout")
