@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyApp01LinearLayout</string>
+    <string name="firstName">Zadejte jméno</string>
+    <string name="lastName">Zadejte příjmení</string>
+    <string name="district">Zadejte obec</string>
+    <string name="age">Věk</string>
+    <string name="send">Odeslat</string>
+    <string name="delete">Smazat</string>
+    <string name="text"> </string>
+</resources>
