@@ -44,14 +44,17 @@ class MainActivity : AppCompatActivity() {
             val age: String = ageEditText.getText().toString()
 
             val displayText = """
-                First Name: $firstName
-                Last Name: $lastName
-                District: $district
-                Age: $age
+                Ahoj, jmenuju se $firstName $lastName. Je mi $age let a moje bydliště je $district
                 """.trimIndent()
             textView.text = displayText
         }
 
-        deleteButton.setOnClickListener { textView.text = "" }
+        deleteButton.setOnClickListener {
+            textView.text = ""
+            firstNameEditText.text.clear()
+            lastNameEditText.text.clear()
+            districtEditText.text.clear()
+            ageEditText.text.clear()
+        }
     }
 }
