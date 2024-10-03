@@ -7,6 +7,7 @@ import com.example.myapp004objednavka.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var selectedDeskName: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,12 +19,15 @@ class MainActivity : AppCompatActivity() {
             when (checkedId) {
                 R.id.radio_hockey -> {
                     binding.imageDesk.setImageResource(R.mipmap.hockey)
+                    selectedDeskName = binding.radioHockey.text.toString()
                 }
                 R.id.radio_sour_solution -> {
                     binding.imageDesk.setImageResource(R.mipmap.sour)
+                    selectedDeskName = binding.radioSourSolution.text.toString()
                 }
                 R.id.radio_palace -> {
                     binding.imageDesk.setImageResource(R.mipmap.palace)
+                    selectedDeskName = binding.radioPalace.text.toString()
                 }
             }
         }
@@ -47,9 +51,8 @@ class MainActivity : AppCompatActivity() {
             selectedOptions.add("Carbon fiber layer")
         }
 
-        // Create the summary text
         return if (selectedOptions.isNotEmpty()) {
-            selectedOptions.joinToString(", ")
+            selectedDeskName + ": " + selectedOptions.joinToString(", ")
         } else {
             "Žádné doplňky nejsou vybrány."
         }
