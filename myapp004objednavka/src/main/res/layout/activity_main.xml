@@ -16,7 +16,7 @@
         android:layout_gravity="center_horizontal"/>
 
     <RadioGroup
-        android:id="@+id/radioGroup_bikes"
+        android:id="@+id/radioGroup_desks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -43,26 +43,26 @@
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkbox_eight"
+        android:id="@+id/checkbox_big_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8.0"/>
+        android:text="Big size"/>
 
     <CheckBox
-        android:id="@+id/checkbox_eight_twenty_five"
+        android:id="@+id/checkbox_carbon_fiber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8.25"/>
+        android:text="Carbon fiber layer"/>
 
     <CheckBox
-        android:id="@+id/checkbox_eight_and_half"
+        android:id="@+id/checkbox_deep_concave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8.5"/>
+        android:text="Deep concave"/>
 
     <Button
-        android:id="@+id/button_order_bike"
-        android:layout_width="match_parent"
+        android:id="@+id/button_order_desk"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OBJEDNAT DESKU"
         android:layout_gravity="center_horizontal"
@@ -71,17 +71,25 @@
         android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/order_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Souhrn objednávky:"
-        android:textSize="16sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/order_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
 
     <ImageView
         android:id="@+id/image_desk"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:scaleType="fitCenter"/>
 </LinearLayout>
