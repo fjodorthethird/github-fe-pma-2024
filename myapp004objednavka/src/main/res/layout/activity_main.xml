@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jakou desku si chceš objednat?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_bikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_hockey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hockey"/>
+
+        <RadioButton
+            android:id="@+id/radio_sour_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sour solution"/>
+
+        <RadioButton
+            android:id="@+id/radio_palace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palace"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.0"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_eight_twenty_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.25"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_eight_and_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.5"/>
+
+    <Button
+        android:id="@+id/button_order_bike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OBJEDNAT DESKU"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:background="#6200EE"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/order_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Souhrn objednávky:"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"/>
+
+    <ImageView
+        android:id="@+id/image_desk"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+</LinearLayout>
