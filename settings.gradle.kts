@@ -23,3 +23,6 @@ rootProject.name = "github-fe-pma-2024"
 include(":myapp01linearlayout")
 include(":myapp002myownlinearlayout")
 include(":myapp004objednavka")
+include(":myapp005myownlinearlayout")
+
+include(":myapp006moreactivities")
