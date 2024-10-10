@@ -24,5 +24,9 @@ class SecondActivity : AppCompatActivity() {
             val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
+
+        binding.buttonFinishSecond.setOnClickListener {
+            finish()
+        }
     }
 }

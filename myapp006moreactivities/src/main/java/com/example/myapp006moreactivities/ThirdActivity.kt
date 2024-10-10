@@ -15,5 +15,9 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.buttonFinishThird.setOnClickListener {
+            finish()
+        }
     }
 }

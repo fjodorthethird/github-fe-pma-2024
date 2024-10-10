@@ -17,4 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Přejít na třetí aktivitu" />
+
+    <Button
+        android:id="@+id/buttonFinishSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zavřít druhou aktivitu"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
